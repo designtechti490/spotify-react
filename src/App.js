@@ -3,11 +3,11 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function App() {
   const [searchResults, setSearchResults] = useState([]);
-  const [artists, setArtists] = useState([]);
+  const [artists] = useState([]);
   const API_URL = "http://localhost:3001/artists";
 
   const handleSearch = (searchTerm) => {
